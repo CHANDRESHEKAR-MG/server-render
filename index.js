@@ -89,3 +89,7 @@ app.listen(process.env.PORT, () => {
 app.get("/", (req, res) => {
   res.send("Server is running successfully 🚀");
 });
+
+app.post("/test", (req, res) => {
+  res.json({ message: "POST working" });
+});
